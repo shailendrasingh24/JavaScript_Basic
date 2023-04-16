@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img onclick="demo()" src="img6.jpg" id="im1"/>
+    <img  onmouseleave="demo()" src="img7.jpg" id="im2"/>
+<script>
+    var demo=()=> {
+        //document.getElementById("im1").src="img7.jpg";
+        var x=document.getElementById("im1")
+        x.src="img7.jpg";
+        x.style.border="10px groove navy"
+        x.style.borderRadius="10px"
+        x.style.height="300px"
+
+        var y=document.getElementById("im2")
+        y.src="img4.jpg";
+        y.style.height="300px"
+        y.style.border="10px groove blue"
+        y.style.borderRadius="5px"
+    }
+</script>
+    
+</body>
+</html>

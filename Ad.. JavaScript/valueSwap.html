@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<input type="text" value="TCS" id="txt1"/><br/><br/>
+<input type="text" value="WIPRO" id="txt2"/><br/><br/>
+<button onclick="demo()">Swap Text</button>
+
+<script>
+
+const demo = () =>{
+     
+	 var x1= document.querySelector("#txt1")
+	 var x2= document.querySelector("#txt2")
+	  var p1 = x1.value;
+	  var p2 = x2.value;
+	   x2.value= p1 
+	   x1.value= p2 
+}
+</script>
+</body>
+</html>

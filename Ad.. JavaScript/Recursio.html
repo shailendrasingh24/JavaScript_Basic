@@ -1,0 +1,10 @@
+<script>
+function demo(number){
+if( number == 1){
+ return 1;
+}
+return number * demo(number-1)
+}
+let Ans = demo(5)
+console.log(Ans);
+</script>

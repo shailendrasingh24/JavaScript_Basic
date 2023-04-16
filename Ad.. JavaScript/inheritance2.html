@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class test 
+        {
+            constructor(name,age)
+            {
+                this.Name = name
+                this.Age = age
+            }
+            showData1()
+            {
+                 return `
+                Name : ${this.Name}
+                Age : ${this.Age}
+                ` 
+            }
+        }
+        class child extends test
+        {
+            constructor(name,age,salary)
+            { super(name,age)     // 3 instance variable
+                this.salary=50000
+            }
+            showData2()
+            {
+                
+                console.log(`
+                 ${super.showData1()}
+                 salary : ${this.salary}
+                `)
+            }
+        }
+         //var obj = new test()
+         //obj.showData1 ()
+        // var obj1 = new child()
+        //  obj1.showData2()
+        var obj1 = new child("Rahul",30,50000)
+        obj1.showData2()
+
+    </script>
+</body>
+</html>

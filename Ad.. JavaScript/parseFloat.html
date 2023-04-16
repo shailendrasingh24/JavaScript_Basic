@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Enter First Nu.<br/><input type="number" id="txt1"/><br/>
+  Enter First Nu.<br/><input type="number" id="txt2"/><br/><br/>
+<button onclick="demo()">ADD NU.</button>
+<script>
+       function demo() {
+    var num1=document.getElementById("txt1").value
+    var num2=document.getElementById("txt2").value
+   // res=parseFloat(num1)+parseFloat(num2)
+    res=Number(num1)+Number(num2)
+     document.write ("Result Is : "+res)
+
+       }
+
+</script>
+</body>
+</html>

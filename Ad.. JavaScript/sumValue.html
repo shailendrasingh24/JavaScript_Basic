@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   First No.<br/><input type="text" id="txt1"/><br/><br/>
+   First No. <br/><input type="text" id="txt2"/><br/><br/>
+   <button onclick="demo()">ADD</button>
+   <script>
+    function demo() {
+        
+        var x=document.getElementById("txt1").value
+        var y=document.getElementById("txt2").value 
+        var res=parseInt(x)+parseInt(y)
+     document.write(res)      
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+p{
+ color:green;
+ font-size:25px;
+ font-family:impact;
+}
+</style>
+</head>
+<body>
+<p id="txt1">Welcome To Techpile</p>
+<p id="txt2">msg</p>
+<button onclick="demo1()">Click Me</button>
+<script>
+
+const demo = () =>{
+    var p1 =document.querySelector("#txt1")  
+    var p2 =document.querySelector("#txt2")  
+    var x1=p1.innerHTML;
+    var x2=p2.innerHTML;
+	p1.innerHTML=x2
+	p2.innerHTML=x1
+	  
+} 
+let demo1 = () => {
+window.setInterval(demo,1000)
+}
+</script>
+</body>
+</html>

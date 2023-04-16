@@ -1,0 +1,10 @@
+<script>
+ let Recursive = (param) =>{
+  if(param == 2){
+       return 2;
+  }
+ return param*Recursive(param-1)
+ }
+ const Res = Recursive(5)
+ console.log(Res)
+</script>

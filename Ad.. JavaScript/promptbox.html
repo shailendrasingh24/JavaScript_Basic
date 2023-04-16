@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var per = prompt("Please Enter The Percentage Here ");
+
+        if(per >=90 && per <=100){
+            document.write("Congratulation You Are Merit")
+        }else if(per>=75 && per<=89){
+            document.write(" Congratulation You Are Genius ")
+        }else if(per>=60 && per<=75){
+            document.write(" Congratulation You Are First Division ")    
+        }else if(per>=35 && per<=59){
+            document.write(" Congratulation You Are Second Division ")    
+        }else if( per<=35){
+            document.write("You Are Fail Try Again ")          
+        }else{
+           alert("Please Valid Percentage ")
+        }
+        document.write.style.color="red"
+    </script>
+</body>
+</html>

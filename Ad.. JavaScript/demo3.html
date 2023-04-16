@@ -1,0 +1,9 @@
+<script>
+ const Recursion = (param) =>{
+ if(param == 2)
+ return 2;
+ return param*Recursion(param-1)
+ }
+ const Res = Recursion(5)
+ console.log(Res);
+</script>
